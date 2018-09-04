@@ -1,0 +1,8 @@
+input UpdatePostInput {
+  id: String!
+  imageUrl: String
+}
+
+type Mutation {
+  updatePost(input: UpdatePostInput!): Response!
+}

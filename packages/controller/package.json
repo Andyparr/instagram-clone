@@ -1,0 +1,35 @@
+{
+  "name": "@instagram/controller",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "watch": "tsc --watch",
+    "schema:download": "apollo schema:download --endpoint=http://localhost:4000",
+    "codegen:generate": "apollo codegen:generate --queries=./src/**/*.tsx --schema=schema.json --target=typescript --outputFlat ./src/schemaTypes.ts",
+    "generate:types": "yarn schema:download && yarn codegen:generate",
+    "refresh:types": "yarn generate:types && yarn build"
+  },
+  "dependencies": {
+    "graphql": "^14.0.0",
+    "graphql-tag": "^2.9.2",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "remove": "^0.1.5"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.0.0",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "apollo": "^1.9.1",
+    "apollo-codegen": "^0.20.2",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3"
+  }
+}

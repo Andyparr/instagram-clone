@@ -1,0 +1,46 @@
+{
+  "name": "@instagram/web",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@instagram/common": "1.0.0",
+    "@instagram/controller": "1.0.0",
+    "antd": "^3.9.0",
+    "apollo-cache-inmemory": "^1.2.9",
+    "apollo-client": "^2.4.1",
+    "apollo-link": "^1.2.2",
+    "apollo-link-http": "^1.5.4",
+    "apollo-link-ws": "^1.0.8",
+    "apollo-upload-client": "^8.1.0",
+    "apollo-utilities": "^1.0.20",
+    "formik": "1.1.1",
+    "graphql": "^14.0.0",
+    "graphql-tag": "^2.9.2",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.2",
+    "react-dropzone": "^5.0.1",
+    "react-geosuggest": "^2.8.0",
+    "react-google-maps": "^9.4.5",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "2.17.0",
+    "yup": "^0.26.3"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/apollo-upload-client": "^8.1.0",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-dropzone": "^4.2.2",
+    "@types/react-geosuggest": "^2.7.7",
+    "@types/react-router-dom": "^4.2.7",
+    "@types/yup": "^0.24.9",
+    "typescript": "^3.0.3"
+  }
+}

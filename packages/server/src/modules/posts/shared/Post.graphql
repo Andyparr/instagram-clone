@@ -1,0 +1,10 @@
+type Post {
+  id: String!
+  imageUrl: String!
+  createdAt: Date!
+  uploadedBy: User!
+}
+
+type Query {
+  getAllPosts: [Post!]!
+}

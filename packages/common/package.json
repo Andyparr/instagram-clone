@@ -1,0 +1,19 @@
+{
+  "name": "@instagram/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc"
+  },
+  "devDependencies": {
+    "@types/yup": "^0.24.9",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "yup": "^0.26.3"
+  }
+}

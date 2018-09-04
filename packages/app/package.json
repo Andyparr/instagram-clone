@@ -1,0 +1,35 @@
+{
+  "name": "@instagram/app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@instagram/common": "1.0.0",
+    "@instagram/controller": "1.0.0",
+    "apollo-boost": "^0.1.15",
+    "apollo-upload-client": "^8.1.0",
+    "expo": "^29.0.0",
+    "graphql": "^14.0.0",
+    "metro-bundler-config-yarn-workspaces": "^1.0.3",
+    "react": "16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
+    "react-router-native": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/apollo-upload-client": "^8.1.0",
+    "@types/expo": "^27.0.8",
+    "@types/react": "^16.4.13",
+    "@types/react-native": "^0.56.17",
+    "@types/react-router-native": "^4.2.3",
+    "metro-bundler-config-yarn-workspaces": "^1.0.3",
+    "react-native-typescript-transformer": "^1.2.10",
+    "typescript": "^3.0.3"
+  }
+}

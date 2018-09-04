@@ -1,0 +1,7 @@
+input AddPostInput {
+  image: Upload
+}
+
+type Mutation {
+  addPost(input: AddPostInput!): Response!
+}

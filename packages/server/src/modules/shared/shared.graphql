@@ -1,0 +1,14 @@
+type Response {
+  ok: String!
+  path: String
+  message: String!
+}
+
+type Error {
+  path: String!
+  message: String!
+}
+
+scalar Date
+
+scalar Upload

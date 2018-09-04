@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+.vscode/
+build/
+temp/*.log
+dump.rdb
+coverage/
+.env

@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build:server": "lerna run build --scope={@airbnb/common,@airbnb/server}",
+    "build:web": "lerna run build --scope={@airbnb/common,@airbnb/controller,@airbnb/web}"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-elements",
+      "**/react-native-elements/**",
+      "**/expo",
+      "**/expo/**",
+      "**/react-native-typescript-transformer",
+      "**/react-native-typescript-transformer/**",
+      "**/metro-bundler-config-yarn-workspaces",
+      "**/metro-bundler-config-yarn-workspaces/**"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^3.2.1"
+  },
+  "nohoist": [
+    "**/react-native",
+    "**/react-native/**",
+    "**/expo",
+    "**/expo/**",
+    "**/react-native-typescript-transformer",
+    "**/react-native-typescript-transformer/**",
+    "**/metro-bundler-config-yarn-workspaces",
+    "**/metro-bundler-config-yarn-workspaces/**"
+  ]
+}
